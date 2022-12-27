@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+}
+
+.top-pane {
+  background-color: #585252;
+}
+
+.pane {
+  display: flex;
+}
+
+.editor-container {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+  flex-direction: column;
+  padding: 0.5rem;
+  overflow: hidden;
+}
+
+.editor-title {
+  display: flex;
+  justify-content: space-between;
+  background: #7d7575;
+  padding: 0.5rem;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  color: #fff;
+}
+
+.Codemirror {
+  height: 100% !important;
+}
+
+.codemirror-wrapper {
+  flex-grow: 1;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.editor-container.collapsed {
+  flex-grow: 0;
+}
+
+.box {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  margin: 0 15px;
+}
+
+.react-resizable-handle {
+  position: absolute;
+  width: 15px;
+  height: 87%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  box-sizing: border-box;
+  background-position: bottom right;
+  padding: 0 3px 3px 0;
+  z-index: 10;
+  display: none;
+}
+.react-resizable-handle-w,
+.react-resizable-handle-e {
+  display: block;
+}
+
+.react-resizable-handle-e {
+  right: 8px;
+}
+
+.react-resizable-handle-w {
+  left: 8px;
+}
+
+.react-resizable-handle-w,
+.react-resizable-handle-e {
+  top: 38px;
+  cursor: col-resize;
+}
